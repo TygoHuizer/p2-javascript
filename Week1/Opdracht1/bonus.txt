@@ -1,0 +1,2 @@
+ID kun je maar 1 keer gebruiken omdat anders de code in de war raakt.
+ ook zoeken elementen zoals ElementById naar de eerste id en zullen id' s daarna niet aangeslagen worden.
