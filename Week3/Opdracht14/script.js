@@ -3,11 +3,11 @@ if (keuze === "cola") {
   document.getElementById("keuze").innerHTML = "Je krijgt een blikje cola 🥤";
   document.getElementById("keuze").style.color = "red";
 }
-if (keuze === "water") {
+else if (keuze === "water") {
   document.getElementById("keuze").innerHTML = "Goed bezig, lekker gezond 💧";
   document.getElementById("keuze").style.color = "blue";
 }
-if (keuze === "koffie") {
+ else if (keuze === "koffie") {
   document.getElementById("keuze").innerHTML = "Energie incoming ☕";
   document.getElementById("keuze").style.color = "brown";
 } else {
