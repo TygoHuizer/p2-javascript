@@ -1,10 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease;
 }
-.body {
-  background-color: rgb(255, 255, 255);
+body {
+  background-image: url("/HoofdOpdrachten/HoofdOpdracht2/images/piz.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: black;
   display: flex;
   flex-direction: column;
@@ -15,12 +19,10 @@
 .hoofd {
   background-color: #ffffff;
   padding: 50px;
-  text-align: center;
   font-size: 24px;
   font-weight: bold;
   border-bottom: 3px solid rgb(156, 156, 156);
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
@@ -33,20 +35,7 @@
   border-top: 3px solid rgb(156, 156, 156);
   margin-top: auto;
 }
-.xyz {
-  color: #343a40;
-  margin: 10px 0;
-  font-size: 18px;
-}
 
-.box {
-  max-width: 300px;
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
 .boxt {
   max-width: 600px;
   background: #ffffff;
@@ -59,14 +48,22 @@
 .xob {
   margin: 20px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 .groot {
   font-size: 100px;
   padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+  color: black;
+  cursor: pointer;
+}
+.klein {
+  font-size: 20px;
+  padding: 5px 10px;
   border: none;
   border-radius: 10px;
   background-color: #e6e6e6;
@@ -77,7 +74,6 @@
   background-color: rgb(0, 0, 61);
   color: rgb(255, 255, 255);
 }
-.nacht .box,
 .nacht .boxt,
 .nacht .hoofd,
 .nacht .voet {
@@ -87,5 +83,55 @@
 }
 .nacht .groot {
   background-color: #2f2f2f;
+  color: rgb(255, 249, 182);
   border-color: #444;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.winBox {
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.winBox h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.winBox .groot {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+.nacht .winBox {
+  background: #1e1e1e;
+  border: 2px solid #444;
+}
+
+.nacht .winBox h1 {
+  color: rgb(255, 249, 182);
+}
+
+.nacht .winBox .groot {
+  background-color: #2f2f2f;
+  color: rgb(255, 249, 182);
 }

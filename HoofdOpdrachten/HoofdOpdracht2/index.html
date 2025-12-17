@@ -7,18 +7,39 @@
     <link rel="stylesheet" href="/HoofdOpdrachten/HoofdOpdracht2/style.css" />
     <script src="/HoofdOpdrachten/HoofdOpdracht2/script.js" defer></script>
   </head>
-  <body class="body">
+  <body>
     <header class="hoofd">
-      <div class="boxs">
+      <div>
         <button onclick="morning()" class="groot">☀️</button>
       </div>
-      <div class="boxs"><h1>🍕Pizza Clicker🍕</h1></div>
-      <div class="boxs">
+      <div>
+        <h1>🍕Pizza Clicker🍕</h1>
+        <h2 id="groet"></h2>
+      </div>
+      <div>
         <button onclick="evening()" class="groot">🌙</button>
       </div>
     </header>
+
     <main class="xob">
-      <div class="boxt"><h1 id="groet">Hallo</h1></div>
+      <div class="boxt">
+        <button onclick="plus()" class="groot">
+          <h1 id="pizza">0</h1>
+          <h1>Pizza</h1>
+        </button>
+      </div>
+      <div class="boxt">
+        <button onclick="minus()" class="groot">-1</button>
+      </div>
+      <div class="boxt">
+        <button onclick="reset()" class="klein">Reset</button>
+      </div>
+      <div id="winOverlay" class="overlay">
+        <div class="winBox">
+          <h1>You Won! 🎉</h1>
+          <button onclick="playAgain()" class="groot">Play Again!</button>
+        </div>
+      </div>
     </main>
     <footer class="voet">
       <p>&copy; 2025 HoofdOpdracht</p>

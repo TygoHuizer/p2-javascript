@@ -1,7 +1,10 @@
 let teller = "0";
 
 function update() {
-  if (teller >= 5) {
+  if (teller >= 10) {
+    document.getElementById("veel").innerHTML = "WASTED!!! ";
+    document.getElementById("teller").style.color = "darkred";
+  } else if (teller >= 5) {
     document.getElementById("veel").innerHTML = "Pauze? Water is ook lekker ";
     document.getElementById("teller").style.color = "red";
   } else if (teller >= 3) {
@@ -31,4 +34,3 @@ function min() {
   }
   update();
 }
- x
