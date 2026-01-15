@@ -5,13 +5,12 @@ hover.addEventListener("mouseout", mouseOut);
 
 function mouseOver() {
   hover.style.backgroundColor = "red";
-    hover.style.scale = "20";
   hover.style.transition = "all 0.3s ease";
   hover.innerHTML = "Nice hover!";
-  hover.style.scale = "1.1";
+  hover.style.scale = "1.2";
 }
 function mouseOut() {
   hover.style.backgroundColor = "blue";
   hover.innerHTML = "";
-    hover.style.scale = "0.5";
+  hover.style.scale = "0.5";
 }
