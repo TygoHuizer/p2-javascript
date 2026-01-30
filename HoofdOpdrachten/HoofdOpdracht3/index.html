@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Input Screen -->
+    <div id="inputScreen" class="screen active">
+        <div class="container">
+            <h1>🔮 Fortune Teller</h1>
+            <p>Stel een ja/nee vraag en ontdek je toekomst...</p>
+            <input type="text" id="questionInput" placeholder="Bijv. Wordt het morgen mooi weer?">
+            <button onclick="getAnswer()">Voorspel mijn toekomst!</button>
+            <p id="warning" class="warning"></p>
+        </div>
+    </div>
+
+    <!-- Answer Screen -->
+    <div id="answerScreen" class="screen">
+        <div class="container">
+            <h2>Je vraag was:</h2>
+            <p id="displayQuestion" class="question-display"></p>
+            <h2>🔮 Het antwoord is:</h2>
+            <p id="displayAnswer" class="answer-display"></p>
+            <button onclick="askAgain()">Stel een nieuwe vraag</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Wall</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/Week7/Opdracht29/script.js" defer></script>
+</head>
+<body>
+    <h1>Welkom op onze website</h1>
+    <p>Klik op de knop om de pagina te bezoeken.</p>
+    <button id="enterBtn" onclick="openModal()">Bezoek Website</button>
+
+    <!-- Modal Box -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Leeftijdsverificatie</h2>
+            <p>Voer je leeftijd in om verder te gaan:</p>
+            <input type="number" id="ageInput" placeholder="Bijv. 21" min="0">
+            <button onclick="verifyAge()">Verifiëren</button>
+        </div>
+    </div>
+
+    <!-- Warning Page -->
+    <div id="warningPage" class="warning-page">
+        <h1>Helaas je bent te jong</h1>
+        <p>Je moet 18 jaar of ouder zijn om deze website te bezoeken.</p>
+    </div>
+</body>
+</html>

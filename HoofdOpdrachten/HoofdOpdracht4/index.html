@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🍅 Pomodoro Timer</h1>
+        
+        <div class="timer-display" id="timerDisplay">25:00</div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" onclick="startTimer()">Start</button>
+            <button id="pauseBtn" onclick="pauseTimer()">Pause</button>
+            <button id="resetBtn" onclick="resetTimer()">Reset</button>
+        </div>
+        
+        <div class="break-controls">
+            <button onclick="setShortBreak()">Short Break (5:00)</button>
+            <button onclick="setLongBreak()">Long Break (15:00)</button>
+        </div>
+        
+        <div class="sessions">
+            <p>Voltooide sessies: <span id="sessionCount">0</span></p>
+        </div>
+        
+        <div id="message" class="message"></div>
+    </div>
+</body>
+</html>

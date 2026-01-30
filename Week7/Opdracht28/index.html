@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Generator 2.0</title>
+    <script src="/Week7/Opdracht28/script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        #cookBtn {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        #specialBtn {
+            background: #ffd93d;
+        }
+
+        #saveBtn {
+            background: #6bcf7f;
+            color: white;
+        }
+
+        .bowl {
+            background: #fff3e0;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 3px solid #ff6b6b;
+        }
+
+        .score {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+
+        #favorites {
+            text-align: left;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍜 Ramen Generator 2.0</h1>
+    <p>Welkom bij de digitale noodle bar!</p>
+    
+    <button id="cookBtn" onclick="cookBowl()">Cook my bowl!</button>
+    <button id="specialBtn" onclick="chefSpecial()">Chef's Special</button>
+    
+    <div id="result"></div>
+    
+    <div id="favorites">
+        <h3>💾 Mijn Favorieten:</h3>
+        <div id="favoritesList"></div>
+    </div>
+</body>
+</html>
