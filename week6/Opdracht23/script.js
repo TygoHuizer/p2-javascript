@@ -6,4 +6,4 @@ function toon() {
   index = (index + 1) % emoji.length;
 }
 
-setInterval(toon, 500);
+setInterval(toon, 100);
